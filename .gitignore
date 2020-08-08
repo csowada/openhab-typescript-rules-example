@@ -1,0 +1,4 @@
+node_modules/*
+dist/*
+src/rules/light.rules.ts
+src/rules/warnings.rules.ts

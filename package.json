@@ -1,0 +1,25 @@
+{
+  "name": "openhab-ts-rules",
+  "version": "0.0.1",
+  "description": "TypeScript rules for openHAB",
+  "main": "src/index.js",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc",
+    "build:js": ".\\node_modules\\.bin\\babel src --out-dir dist --extensions \".ts\""
+  },
+  "author": "Christian Sowada, github@cs-dev.de",
+  "license": "EPL",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/openhab": "github:csowada/openhab-typescript-definition",
+    "typescript": "^3.9.7"
+  }
+}
